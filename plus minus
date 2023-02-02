@@ -1,1 +1,20 @@
-
+ public static void plusMinus(List<Integer> arr) {
+    // Write your code here
+    int positivecount=0;
+    int negativecount=0;
+    int zerocount=0;
+    for(int n:arr) {
+        if(n>o) {
+        positivecount++;
+    } else if(n==0) {
+        zerocount++;
+       } else {
+            negativecount++; 
+        }
+    }
+    System.out.println(positivecount/arr.length);
+    System.out.println(negativecount/arr.length);
+    System.out.println(zerocount/arr.length);
+    }
+    }
+}
