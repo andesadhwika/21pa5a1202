@@ -1,0 +1,13 @@
+ public static int lonelyinteger(List<Integer> a) {
+    HashSet<Integer> s=new HashSet<Integer>();
+    for(int i:a){
+        if(s.contains(i)){
+            s.remove(i);
+        }
+        else{
+            s.add(i);
+        }
+    }
+        return new ArrayList<>(s).get(0);
+    }
+}
