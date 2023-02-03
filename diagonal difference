@@ -1,0 +1,25 @@
+ public static int diagonalDifference(List<List<Integer>> arr) {
+       int s1=0;
+       int s2=0;
+         for(int i=0;i<arr.size();i++){
+           for(int j=0;j<arr.size();j++){
+              if(i==j){
+              s1 += arr.get(i).get(j);
+         }
+     }}
+      Collections.reverse(arr);
+             
+         for(int i=0;i<arr.size();i++){
+             for(int j=0;j<arr.size();j++){
+                if(i==j){
+                  s2 +=arr.get(i).get(j);
+         }
+     }
+         }
+            int sum=s1-s2;
+ 
+      return Math.abs(sum);
+
+    }
+    }
+
