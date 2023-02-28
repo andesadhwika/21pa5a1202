@@ -1,0 +1,22 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+        int copy=x;
+       int rev=0;
+        while(x!=0){
+         int rem;
+            rem=x%10;
+            rev=rev*10 +rem;
+            x=x/10;
+            
+        }
+         boolean check=false;
+        if(rev<0){
+            return check;
+        }
+       
+        else if(rev==copy){
+            check=true;
+            return check;
+        }else return check;
+     }
+    }
